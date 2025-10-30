@@ -15,12 +15,14 @@ import imgC from '../assets/techno/c.png'
 import imgCSharp from '../assets/techno/cShap.jpeg'
 import imgPHP from '../assets/techno/php.png'
 import imgMySQL from '../assets/techno/mySQL.jpeg'
+import imgJAVA from '../assets/techno/java.png'
 
 const skills = [
     { id: 1, name: "HTML", image: imgHTML },
     { id: 2, name: "CSS", image: imgCSS },
     { id: 3, name: "JavaScript", image: imgJS },
-    { id: 4, name: "React", image: imgREACT },
+    { id: 4, name: "React", image: imgREACT  },
+    { id: 14, name: "Java", image: imgJAVA },
     { id: 5, name: "Python", image: imgPython },
     { id: 6, name: "Tailwind CSS", image: imgTAILWIND },
     { id: 7, name: "Vue.js", image: imgVUE },
