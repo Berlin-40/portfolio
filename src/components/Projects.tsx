@@ -7,6 +7,7 @@ import jeux from '../assets/projects/jeux.jpg'
 import labyrinthe from '../assets/projects/labirynthe.png'
 import pickupfood from '../assets/projects/PickUpFood.png'
 import todoReact from '../assets/projects/todo.png'
+import minuteurKotlin from '../assets/projects/minuteur.png'
 import { Github } from "lucide-react"
 
 const projects = [
@@ -88,7 +89,17 @@ const projects = [
         demoLink: "#",
         repoLink: "https://github.com/Berlin-40/todo-react",
         image: todoReact
-    }
+    },
+    {
+    id: 9,
+    title: "Minuteur en Kotlin",
+    description: "Développement d’une application mobile de minuteur intuitive en Kotlin, conçue à partir d’une maquette Figma. L’application permet de lancer, mettre en pause et réinitialiser un compte à rebours, avec une interface fluide et ergonomique réalisée en Jetpack Compose.",
+    technologies: ["Kotlin", "Jetpack Compose", "Android Studio", "Figma"],
+    demoLink: "#",
+    repoLink: "https://github.com/Berlin-40/",
+    image: minuteurKotlin
+}
+
 
 ];
 

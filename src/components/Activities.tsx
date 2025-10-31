@@ -7,7 +7,7 @@ import { Activity } from "lucide-react" // tu peux choisir une icône adaptée
 const activities = [
     {
         id: 1,
-        title: "Course pour le cancer du Saint à Caen",
+        title: "Course pour le cancer du sein à Caen",
         description:
             "J'ai soutenu, avec mes amis, une course solidaire afin de récolter des fonds pour la lutte contre le cancer. Une expérience enrichissante et pleine de solidarité.",
         image: cancerRun,
@@ -28,7 +28,10 @@ const activities = [
     }
 ];
 
-const Activities = () => {
+type Props ={
+    handleClick:()=>void,
+}
+const Activities = ({handleClick}:Props) => {
   return (
     <div className="mt-10" id="Activities">
         <Title title="Mes Activités"/>
@@ -41,7 +44,7 @@ const Activities = () => {
                         <p className="text-sm">{activity.description}</p>
                     </div>
                     <div className="flex mt-3">
-                        <a className="btn btn-natural" href="#">
+                        <a className="btn btn-natural" href="#" onClick={handleClick}>
                             <Activity className="w-4 mr-1"/> Plus d'infos
                         </a>
                     </div>

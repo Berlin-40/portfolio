@@ -5,14 +5,20 @@ import Educations from './components/Educations'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
 import Activities from './components/Activities'
+import { useState } from 'react'
 
 function App() {
+  const [highlight, setHighlight] = useState(false);
+  function handleClick (){
+    setHighlight(true);
+    setTimeout(() => setHighlight(false), 10000);
+  };
 
   return (
     <div>
       <div className='p-5 md:px-[15%]'>
         <Navbar/>
-        <Home/>
+        <Home highlight={highlight}/>
       </div>
       <div>
         <About/>
@@ -24,7 +30,7 @@ function App() {
         <Projects/>
       </div>
       <div className='p-5 md:px-[15%]'>
-        <Activities/>
+        <Activities handleClick={handleClick}/>
       </div>
       <Footer/>
     </div>

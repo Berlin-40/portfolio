@@ -1,6 +1,10 @@
 import { Mail } from "lucide-react"
 import img from "../assets/moi.jpg"
-const Home = () => {
+
+type Props={
+    highlight:boolean
+}
+const Home = ({highlight}:Props) => {
   return (
     <div className="flex flex-col-reverse md:flex-row justify-center items-center md:my-32 my-10">
         <div className="flex flex-col">
@@ -19,11 +23,16 @@ const Home = () => {
                 compétences tout en contribuant activement à des projets concrets et
                 innovants.
             </p>
-            <a href="mailto:fotsopaulin47@gmail.com" className="btn btn-accent md:w-fit">
-                <Mail className="w-5 h-5"/>
-                contactez-moi
-            </a>
-        </div>
+    <a id="Contact" href="mailto:fotsopaulin47@gmail.com"
+      className={`btn btn-accent md:w-fit flex items-center gap-2 transition-all duration-300 
+        ${highlight
+          ? "bg-yellow-400 shadow-[0_0_15px_5px_rgba(250,204,21,0.7)]"
+          : "bg-accent"
+        }`}
+    >
+      <Mail className="w-5 h-5" />
+      contactez-moi
+    </a>        </div>
       <div className="flex justify-center md:w-200 mb-10 md:mb-0 md:ml-20">
             <img src={img} alt="" className="w-96 h-96 object-cover border-8 border-accent shadow-xl"
                 style={{
