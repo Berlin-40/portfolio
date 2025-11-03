@@ -16,6 +16,9 @@ import imgCSharp from '../assets/techno/cShap.jpeg'
 import imgPHP from '../assets/techno/php.png'
 import imgMySQL from '../assets/techno/mySQL.jpeg'
 import imgJAVA from '../assets/techno/java.png'
+import imgPowerBi from '../assets/techno/powerbi.png' // Make sure the path and filename are correct
+import imgLaravel from '../assets/techno/laravel.png'
+import imgTypeScript from '../assets/techno/typescript.svg'
 
 const skills = [
     { id: 1, name: "HTML", image: imgHTML },
@@ -32,6 +35,9 @@ const skills = [
     { id: 11, name: "C#", image: imgCSharp},
     { id: 12, name: "PHP", image: imgPHP},
     { id: 13, name: "MySQL", image: imgMySQL},
+    { id: 15, name: "Power", image: imgPowerBi},
+    { id: 16, name: "Laravel", image: imgLaravel},
+    { id: 17, name: "TypeScript", image: imgTypeScript},
 ];
 const education = [
     {

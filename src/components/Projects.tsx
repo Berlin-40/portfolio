@@ -8,6 +8,9 @@ import labyrinthe from '../assets/projects/labirynthe.png'
 import pickupfood from '../assets/projects/PickUpFood.png'
 import todoReact from '../assets/projects/todo.png'
 import minuteurKotlin from '../assets/projects/minuteur.png'
+import projetgea from '../assets/projects/projetgea.jpg'
+import projetStockVetements from '../assets/projects/projetStockVetements.png'
+import projetCalculScientifique from '../assets/projects/projetCalculScientifique.png'
 import { Github } from "lucide-react"
 
 const projects = [
@@ -85,7 +88,7 @@ const projects = [
         id: 8,
         title: "To-Do List en React",
     description: "Création d’une application To-Do List réactive permettant l’ajout, la modification, la suppression et le tri des tâches selon leur priorité, avec persistance locale et interface intuitive.",
-        technologies: ["React", "JavaScript", "HTML", "CSS"],
+        technologies: ["React", "JavaScript", "HTML", "CSS","TypeScript"],
         demoLink: "#",
         repoLink: "https://github.com/Berlin-40/todo-react",
         image: todoReact
@@ -98,9 +101,36 @@ const projects = [
     demoLink: "#",
     repoLink: "https://github.com/Berlin-40/",
     image: minuteurKotlin
-}
-
-
+    },
+{
+    id: 10,
+    title: "Projet tutoré avec étudiants GEA – Power BI",
+    description: "Développement de tableaux de bord Power BI pour analyser les réponses d’interviews auprès des étudiants sur leurs besoins en aides au voyage.",
+    technologies: ["Power BI"],
+    demoLink: "#",
+    repoLink: "https://github.com/Berlin-40/",
+    image: projetgea
+    },
+    {
+    id: 11,
+    title: "Gestion de stock d’un magasin de vêtements",
+    description:
+        "Application web développée avec Laravel permettant de gérer le stock d’un magasin de vêtements (pantalons, tee-shirts, écharpes). Le système calcule automatiquement les prix selon un coefficient et affiche la valeur totale du stock.",
+    technologies: ["Laravel", "React", "MySQL", "TailwindCSS"],
+    demoLink: "#",
+    repoLink: "https://github.com/Berlin-40/",
+    image: projetStockVetements,
+    },
+    {
+    id: 12,
+    title: "Projet de calcul scientifique – L2 Informatique",
+    description:
+        "Réalisation d’un projet de calcul scientifique en Python visant à modéliser et analyser des données numériques. Utilisation de bibliothèques telles que NumPy et Matplotlib pour le traitement, la visualisation et l’analyse de résultats expérimentaux.",
+    technologies: ["Python", "NumPy", "Matplotlib"],
+    demoLink: "#",
+    repoLink: "https://github.com/Berlin-40/",
+    image: projetCalculScientifique,
+    }
 ];
 
 const Projects = () => {
