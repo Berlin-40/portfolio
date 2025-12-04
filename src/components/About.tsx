@@ -5,7 +5,7 @@ import {  Code2,  Lightbulb, Palette } from 'lucide-react';
 const aboutSections = [
     {
         id: 1,
-        title: "Développeur Fullstack MERN",
+        title: "Futur Développeur Fullstack",
         description: "Étudiant ingénieur en informatique à l’ENSICAEN, je conçois aussi bien le front-end que le back-end d’applications web. J’aime donner vie à des projets complets, du design à la base de données.",
         icon: <Code2 className="text-accent scale-150" />,
     },
