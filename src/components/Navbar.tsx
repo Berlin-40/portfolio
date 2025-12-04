@@ -7,7 +7,7 @@ const Navbar = ()=> {
             className="flex items-center font-bold text-3xl md:text-xl"
             >
                 <Container className="mr-2"/>
-                KAMEL <span className="text-accent">DEV</span>
+                KAMEL
 
             </a>
             <ul className=" hidden md:flex space-x-4">

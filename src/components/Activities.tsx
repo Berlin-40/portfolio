@@ -44,7 +44,7 @@ const Activities = ({handleClick}:Props) => {
                         <p className="text-sm">{activity.description}</p>
                     </div>
                     <div className="flex mt-3">
-                        <a className="btn btn-natural" href="#" onClick={handleClick}>
+                        <a className="btn btn-natural" href="#Header" onClick={handleClick}>
                             <Activity className="w-4 mr-1"/> Plus d'infos
                         </a>
                     </div>

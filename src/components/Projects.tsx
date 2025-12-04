@@ -18,7 +18,6 @@ import wordCounter from '../assets/projects/wordCounter.png'
 
 
 import { Github } from "lucide-react"
-import React from "react"
 
 const projects = [
     {
@@ -28,7 +27,7 @@ const projects = [
         "Implémentation complète du célèbre automate cellulaire de Conway en Java avec une interface graphique Swing, optimisation Hashlife et tests unitaires.",
     technologies: ["Java", "Swing", "JUnit 5", "Git"],
     demoLink: "#",
-    repoLink: "https://github.com/Berlin-40",
+    repoLink: "https://github.com/Berlin-40/Jeu-de-la-Vie",
     image: gameoflife,
 },
 {
@@ -38,7 +37,7 @@ const projects = [
         "Site en Vue.js consommant une API externe pour afficher, ajouter et gérer des citations favorites.",
     technologies: ["Vue.js", "API REST", "JavaScript", "HTML", "CSS"],
     demoLink: "#",
-    repoLink: "https://github.com/Berlin-40",
+    repoLink: "https://github.com/Berlin-40/EclatsDeSagesse",
     image: quotesapp,
 },
 {
@@ -58,7 +57,7 @@ const projects = [
         "Site web permettant de gérer des Pokémon : ajout, modification, suppression, pagination et gestion MySQL.",
     technologies: ["PHP", "MySQL", "HTML", "CSS"],
     demoLink: "#",
-    repoLink: "https://github.com/Berlin-40",
+    repoLink: "https://github.com/Berlin-40/Pok-GameDex",
     image: pokemon,
 },
 {
@@ -88,7 +87,7 @@ const projects = [
         "Application Android en Kotlin permettant de gérer ses repas via Jetpack Compose et architecture MVVM.",
     technologies: ["Kotlin", "Jetpack Compose", "Room", "Coroutines", "MVVM"],
     demoLink: "#",
-    repoLink: "https://github.com/Berlin-40",
+    repoLink: "https://github.com/Berlin-40/FoodPickApp",
     image: pickupfood,
 },
 {
@@ -108,7 +107,7 @@ const projects = [
         "Application mobile Kotlin avec minuteur complet inspiré d'une maquette Figma et interface Jetpack Compose.",
     technologies: ["Kotlin", "Jetpack Compose", "Android Studio", "Figma"],
     demoLink: "#",
-    repoLink: "https://github.com/Berlin-40/",
+    repoLink: "https://github.com/Berlin-40/Countdown",
     image: minuteurKotlin,
 },
 {
@@ -118,7 +117,7 @@ const projects = [
         "Tableaux de bord Power BI pour analyser les réponses d'interviews d'étudiants concernant les aides au voyage.",
     technologies: ["Power BI"],
     demoLink: "#",
-    repoLink: "https://github.com/Berlin-40/",
+    repoLink: "",
     image: projetgea,
 },
 {
@@ -138,7 +137,7 @@ const projects = [
         "Projet Python utilisant NumPy et Matplotlib pour modéliser, traiter et visualiser des données scientifiques.",
     technologies: ["Python", "NumPy", "Matplotlib"],
     demoLink: "#",
-    repoLink: "https://github.com/Berlin-40/",
+    repoLink: "",
     image: projetCalculScientifique,
 },
 
@@ -149,7 +148,7 @@ const projects = [
         "Site portfolio moderne, responsive et déployé en ligne, présentant mes projets, mon parcours et mes compétences.",
     technologies: ["HTML", "CSS","React", "JavaScript", "Netlify"],
     demoLink: "https://fkamelportfolio.netlify.app/",
-    repoLink: "https://github.com/Berlin-40/",
+    repoLink: "https://github.com/Berlin-40/portfolio",
     image: portfolioImg,
 },
 {
@@ -159,7 +158,7 @@ const projects = [
         "Interface utilisateur du projet backend, réalisée avec Spring Boot. Point d'entrée principal pour les utilisateurs.",
     technologies: ["Spring Boot", "Java","Html", "Thymeleaf"],
     demoLink: "#",
-    repoLink: "https://github.com/Berlin-40/",
+    repoLink: "https://github.com/Berlin-40/WebApp",
     image: webapp,
 },
 {
@@ -212,10 +211,12 @@ const Projects = () => {
                         ))}
                     </div>
                     <div className="flex">
-                        <a  className="btn btn-natural" href={project.repoLink}>Dépôt
-                        <video className="w-4"></video>
-                            <Github className="w-4"/>
-                        </a>
+                        {project.repoLink && project.repoLink !== "" ? (
+                            <a className="btn btn-natural" href={project.repoLink}>
+                            Dépôt
+                            <Github className="w-4" />
+                            </a>
+                        ) : null}
                     </div>
                 </div>
             ))}
