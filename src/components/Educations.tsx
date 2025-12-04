@@ -19,6 +19,8 @@ import imgJAVA from '../assets/techno/java.png'
 import imgPowerBi from '../assets/techno/powerbi.png' // Make sure the path and filename are correct
 import imgLaravel from '../assets/techno/laravel.png'
 import imgTypeScript from '../assets/techno/typescript.svg'
+import imgSpringBoot from '../assets/techno/springio-icon.svg'
+import imgSqlLite from '../assets/techno/sqlite-icon.svg'
 
 const skills = [
     { id: 1, name: "HTML", image: imgHTML },
@@ -38,6 +40,8 @@ const skills = [
     { id: 15, name: "Power", image: imgPowerBi},
     { id: 16, name: "Laravel", image: imgLaravel},
     { id: 17, name: "TypeScript", image: imgTypeScript},
+    { id: 18, name: "Spring Boot", image: imgSpringBoot},
+    { id: 19, name: "SqlLite", image: imgSqlLite},
 ];
 const education = [
     {
